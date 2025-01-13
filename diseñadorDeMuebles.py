@@ -26,8 +26,7 @@ def main():
     materials = input("Lista los materiales (ej. acero y madera de roble): ")
 
     # Generar texto
-    openai.api_key = "tu_clave_api_openai"
-
+    openai.api_key = ""
     text_prompt = generate_text_prompt(description, dimensions, materials)
     text_response = openai.ChatCompletion.create(
         model="gpt-4",
